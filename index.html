@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Move+</title>
+<meta name="description" content="Guia prático de autocuidado, postura e exercício">
+<meta name="theme-color" content="#126e73">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Move+">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" href="./assets/icons/icon-192.png">
+<link rel="apple-touch-icon" href="./assets/icons/icon-192.png">
+<link rel="stylesheet" href="./css/style.css">
+<script src="./version.js"></script>
+<script src="./js/data/exercicios.js"></script>
+<script src="./js/data/guia.js"></script>
+<script src="./js/data/rotinas.js"></script>
+<script src="./js/data/imagens.js"></script>
+<script src="./js/app.js" defer></script>
+</head>
+<body>
+<div id="splash" role="img" aria-label="Move+. Para ti, com amor.">
+  <div class="splash-stage">
+    <img src="./assets/splash/splash.webp" alt="">
+    <p class="splash-msg">Para ti, com <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></p>
+  </div>
+</div>
+<div class="app">
+  <header>
+    <div class="brand"><img class="brandmark" src="./assets/icons/mark.svg" alt=""><span>Move+</span><span class="version" id="ver"></span></div>
+    <div class="actions">
+      <button class="iconbtn" id="search" aria-label="Pesquisar"></button>
+      <button class="iconbtn" id="theme" aria-label="Alternar modo claro e escuro"></button>
+      <button class="iconbtn" id="settings" aria-label="Configuração"></button>
+    </div>
+  </header>
+  <main class="main" id="main"></main>
+  <nav class="bottom" id="bottom" aria-label="Navegação principal"></nav>
+  <div id="toast" role="status" aria-live="polite"></div>
+</div>
+<noscript>Move+ precisa de JavaScript activo.</noscript>
+</body>
+</html>
